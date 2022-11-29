@@ -1,0 +1,36 @@
+body::before {
+    display: block;
+    content: '';
+    height: 80px;
+}
+
+.division {
+    padding-top: 80px;
+}
+
+#backtoTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: none;
+    color: green;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+  
+  #backtoTop:hover {
+    color: gray; /* Add a dark-grey background on hover */
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+  }
+  
