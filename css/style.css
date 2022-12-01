@@ -38,17 +38,3 @@ body::before {
   height: 15vw;
   object-fit: cover;
 }
-
-.logo {
-  width: 200px;
-  height: 40px;
-  object-fit: cover;
-}
-
-h3 {
-  margin-top: 20px;
-}
-
-h3 {
-  margin-top: 20px;
-}
