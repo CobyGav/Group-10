@@ -1,11 +1,15 @@
 body::before {
     display: block;
     content: '';
-    height: 80px;
+    height: 75px;
 }
 
 .division {
     padding-top: 80px;
+}
+
+.menu-spacing {
+  padding-top: 85px;
 }
 
 #backtoTop {
@@ -34,3 +38,12 @@ body::before {
     object-fit: cover;
   }
   
+  .logo {
+    width: 200px;
+    height: 40px;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-top: 20px;
+  }
