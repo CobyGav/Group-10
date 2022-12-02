@@ -1,7 +1,10 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
 body::before {
   display: block;
   content: '';
-  height: 60px;
+  height: 55px;
 }
 
 .division {
@@ -15,26 +18,31 @@ body::before {
 #backtoTop {
   display: none;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 40px;
+  right: 40px;
   z-index: 99;
   border: none;
   outline: none;
   background-color: none;
-  color: green;
   cursor: pointer;
-  padding: 10px;
   border-radius: 5px;
-  font-size: 10px;
-}
-
-#backtoTop:hover {
-  color: gray;
-  /* Add a dark-grey background on hover */
 }
 
 .card-img-top {
   width: 100%;
   height: 15vw;
   object-fit: cover;
+}
+
+.chefbg {
+  background-image: url(../images/chefbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .chefbg {
+    background-image: none;
+    background-color: #1d8857;
+  }
 }

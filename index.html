@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MeatHub</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -26,11 +31,11 @@
             <a href="./index.html" class="navbar-brand">
                 <span class="text-warning h1">MeatHub</span>
             </a>
-    
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -71,7 +76,7 @@
     </nav>
 
     <!-- banner -->
-    <div id="bannerC" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="1500">
+    <div id="bannerC" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#bannerC" data-bs-slide-to="0" class="active" aria-current="true"
                 aria-label="Slide 1"></button>
@@ -128,18 +133,18 @@
     </div>
 
     <!-- reservation -->
-    <section class="bg-light text-center p-5 p-md-0">
-        <div class="container" data-aos="fade-down" data-aos-duration="1500">
+    <section class="bg-light text-center division">
+        <div class="container py-5" data-aos="fade-down" data-aos-duration="1500">
             <!-- wont display flex until sm breakpoint -->
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div class="h1">
+            <div class="d-md-flex align-items-center align-self-center">
+                <div class="h1 pe-md-3">
                     <span class="text-warning">MeatHub</span>
                     <p class="my-4">"TASTE LIKE HEAVEN"</p>
                     <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#reserve">Make A
                         Reservation</button>
                 </div>
                 <!-- hides below small breakpoint. img-fluid class means the image stays inside the container -->
-                    <img class="img-fluid w-50 d-none d-sm-block" src="images/headerimg.png" alt="">
+                <img class="img-fluid w-75 d-none d-md-block rounded-2" src="images/reserve.jpg" alt="">
             </div>
         </div>
     </section>
@@ -147,316 +152,360 @@
     <!-- about us -->
     <section id="aboutus" class="division">
         <div class="container bg-light p-5 rounded-5">
-            <h2 class="text-center" data-aos="fade-up" data-aos-duration="1500">About Us</h2>
-            <p class="text-center" data-aos="fade-up" data-aos-duration="1500">
-                Whether it’s happy hour after work or a late night out with friends, nothing says relaxation and
-                celebration like time spent on an outdoor yard with a drink in your hand. Next time you feel closed in
-                by the walls around you, step outside to enjoy one of the best outdoor resto-bars and grills in
-                Philippines. G-10 focuses on “Fresh, Quality Pinoy-Putok-batok Food” with an emphasis on small shareable
-                plates that go well with beer.
-            </p>
-            <p class="text-center" data-aos="fade-right" data-aos-duration="1500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum nam laborum ut eaque dolorem
-                recusandae debitis quo tenetur in vero voluptates repellat rerum dolorum tempora reprehenderit, fugit
-                eveniet ex cumque autem? Architecto ut dolores earum quisquam alias impedit sequi, voluptate omnis
-                doloribus repellendus odio modi sed veniam perferendis aliquid, incidunt praesentium nihil officiis.
-                Fugit cumque rem beatae illum hic quas consectetur aspernatur eum dolor dicta culpa veniam totam id et
-                omnis obcaecati ratione, corporis quasi aliquam perspiciatis consequuntur nisi facere saepe harum!
-                Obcaecati, ab impedit labore enim perferendis vel quae odio blanditiis porro dicta soluta eius
-                repellendus commodi saepe mollitia aliquam, inventore quisquam quod pariatur officia voluptas totam iste
-                deleniti ad. Ipsa vero laudantium perferendis necessitatibus qui fuga velit minus. Nam cum sint, eum
-                earum dicta error maiores qui. Eligendi vitae assumenda officiis. Harum eum quasi molestias sunt omnis
-                quidem quo cumque neque reiciendis est perferendis, beatae voluptate architecto enim delectus magnam, ab
-                sint necessitatibus explicabo temporibus excepturi. Quia voluptatem, cupiditate necessitatibus nobis
-                voluptates reiciendis quisquam veniam placeat, doloremque, veritatis tempora? Numquam maiores molestiae,
-                eos autem amet quasi illo atque voluptatum tenetur consectetur dicta dolorem labore, perferendis
-                similique deleniti rerum quo saepe praesentium! Quidem, sed! Esse iusto molestiae repudiandae!
-            </p>
-            <p class="text-center" data-aos="fade-left" data-aos-duration="1500">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quod, provident blanditiis
-                excepturi cupiditate illo mollitia cum nulla explicabo dolorem ducimus dolor ratione, quisquam commodi
-                qui dolorum dicta aliquam voluptas pariatur atque. Aliquid velit natus voluptas placeat quos optio
-                excepturi nihil culpa sit sint, accusamus ullam consectetur laboriosam, dolor veritatis repellendus
-                maxime explicabo magni nisi! Libero delectus aperiam aliquid non adipisci id tempore dolorum numquam,
-                sint dolore rerum natus odit beatae eveniet soluta cumque. Reiciendis repellat maxime saepe aliquid
-                accusantium, iure veniam? Reiciendis, tempore praesentium. Ab ipsa debitis corrupti dolores iusto
-                voluptatibus aliquam. Accusantium, aliquam necessitatibus! Exercitationem perferendis officiis cum!
-            </p>
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <h2 class="text-center">About Us</h2>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <p class="text-center">
+                    Whether it’s happy hour after work or a late night out with friends, nothing says relaxation and
+                    celebration like time spent on an outdoor yard with a drink in your hand. Next time you feel closed
+                    in
+                    by the walls around you, step outside to enjoy one of the best outdoor resto-bars and grills in
+                    Philippines. G-10 focuses on “Fresh, Quality Pinoy-Putok-batok Food” with an emphasis on small
+                    shareable
+                    plates that go well with beer.
+                </p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum nam laborum ut eaque dolorem
+                    recusandae debitis quo tenetur in vero voluptates repellat rerum dolorum tempora reprehenderit,
+                    fugit
+                    eveniet ex cumque autem? Architecto ut dolores earum quisquam alias impedit sequi, voluptate omnis
+                    doloribus repellendus odio modi sed veniam perferendis aliquid, incidunt praesentium nihil officiis.
+                    Fugit cumque rem beatae illum hic quas consectetur aspernatur eum dolor dicta culpa veniam totam id
+                    et
+                    omnis obcaecati ratione, corporis quasi aliquam perspiciatis consequuntur nisi facere saepe harum!
+                    Obcaecati, ab impedit labore enim perferendis vel quae odio blanditiis porro dicta soluta eius
+                    repellendus commodi saepe mollitia aliquam, inventore quisquam quod pariatur officia voluptas totam
+                    iste
+                    deleniti ad. Ipsa vero laudantium perferendis necessitatibus qui fuga velit minus. Nam cum sint, eum
+                    earum dicta error maiores qui. Eligendi vitae assumenda officiis. Harum eum quasi molestias sunt
+                    omnis
+                    quidem quo cumque neque reiciendis est perferendis, beatae voluptate architecto enim delectus
+                    magnam, ab
+                    sint necessitatibus explicabo temporibus excepturi. Quia voluptatem, cupiditate necessitatibus nobis
+                    voluptates reiciendis quisquam veniam placeat, doloremque, veritatis tempora? Numquam maiores
+                    molestiae,
+                    eos autem amet quasi illo atque voluptatum tenetur consectetur dicta dolorem labore, perferendis
+                    similique deleniti rerum quo saepe praesentium! Quidem, sed! Esse iusto molestiae repudiandae!
+                </p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <p class="text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quod, provident blanditiis
+                    excepturi cupiditate illo mollitia cum nulla explicabo dolorem ducimus dolor ratione, quisquam
+                    commodi
+                    qui dolorum dicta aliquam voluptas pariatur atque. Aliquid velit natus voluptas placeat quos optio
+                    excepturi nihil culpa sit sint, accusamus ullam consectetur laboriosam, dolor veritatis repellendus
+                    maxime explicabo magni nisi! Libero delectus aperiam aliquid non adipisci id tempore dolorum
+                    numquam,
+                    sint dolore rerum natus odit beatae eveniet soluta cumque. Reiciendis repellat maxime saepe aliquid
+                    accusantium, iure veniam? Reiciendis, tempore praesentium. Ab ipsa debitis corrupti dolores iusto
+                    voluptatibus aliquam. Accusantium, aliquam necessitatibus! Exercitationem perferendis officiis cum!
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- main menu -->
     <section class="division">
         <div class="container bg-light p-5 rounded-5">
-            <div class="text-center h2">Menu</div>
+            <div class="text-center h2" data-aos="fade-up" data-aos-duration="1500">Menu</div>
             <div id="meals" class="menu-spacing"></div>
-            <div data-aos="zoom-in" data-aos-duration="1500">
-                <span class="h3 text-success">Meals</span>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div>
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <div class="h3 text-success">Meals</div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- test -->
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <!-- test -->
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=710&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=710&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="drinks" class="menu-spacing"></div>
-            <div data-aos="zoom-in" data-aos-duration="1500">
-                <span class="h3 text-success">Drinks</span>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div>
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <div class="h3 text-success">Drinks</div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- test -->
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <!-- test -->
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="steaks" class="menu-spacing"></div>
-            <div data-aos="zoom-in" data-aos-duration="1500">
-                <span class="h3 text-success">Steaks</span>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div>
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <div class="h3 text-success">Steaks</div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1532980400857-e8d9d275d858?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1532980400857-e8d9d275d858?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- test -->
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1586511934875-5c5411eebf79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <!-- test -->
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1586511934875-5c5411eebf79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1600335895229-6e75511892c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1600335895229-6e75511892c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
-                                class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+                                    class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk of
+                                        the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <!-- Chefs -->
     <section id="chefs" class="division">
-        <div class="bg-success p-5">
-            <div class="container">
-                <h2 class="text-center pb-3">Our Chefs</h2>
-                <p class="text-center h4 pb-3">
-                    We offer the best ingredients for you
+        <div class="chefbg py-5">
+            <div class="container" data-aos="fade-up" data-aos-duration="1500">
+                <h2 class="text-center text-white text-white py-5">Our Chefs</h2>
+                <p class="text-center text-white h4">
+                    We offer the best
                 </p>
-                <div class="row g-4">
+                <p class="text-center text-white h4 pb-5">
+                    ingredients for you
+                </p>
+                <div class="row g-4 pb-5 mb-5">
                     <div class="col-md-6 col-lg-3">
                         <div class="card bg-light">
                             <div class="card-body text-center">
@@ -465,10 +514,12 @@
                                 <h3 class="card-title mb-3">Raymart</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
-                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -481,10 +532,12 @@
                                 <h3 class="card-title mb-3">Siegfred</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
-                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -497,10 +550,12 @@
                                 <h3 class="card-title mb-3">Anthony</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
-                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -513,10 +568,12 @@
                                 <h3 class="card-title mb-3">Christian</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
-                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -526,9 +583,9 @@
     </section>
 
     <!-- FAQS -->
-    <section id="faqs" class="p-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <section id="faqs" class="division">
+        <div class="container py-5">
+            <h2 class="text-center py-5">Frequently Asked Questions</h2>
             <div class="accordion accordion-flush" id="questions">
                 <!-- FAQ 1 -->
                 <div class="accordion-item">
@@ -640,22 +697,24 @@
 
     <!-- back to top btn -->
     <a href="#" id="backtoTop">
-        <i class="bi bi-arrow-up-square-fill h1"></i>
+        <i class="bi bi-arrow-up-square-fill h1 text-warning"></i>
     </a>
 
     <!-- Modal -->
     <div class="modal fade" id="reserve" tabindex="-1" aria-labelledby="reserveLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="modal-content bg-light">
                 <div class="modal-header bg-success">
                     <div class="modal-title text-white h4" id="reserveLabel">TABLE RESERVATION</div>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-lg-6 align-self-center text-center py-3">
-                            <div class="h4 pb-2">Contact Us</div>
-                            <p class="my-0"><i class="bi bi-telephone-fill"></i> 0906-571-6141</p>
-                            <p class="my-0 pb-4"><i class="bi bi-envelope-fill"></i> meathub@support.com</p>
+                            <div class="h4 pb-3">Contact Us</div>
+                            <p class="my-0"><i class="bi bi-telephone-fill"></i><a href="tel:09065716141"
+                                    class="text-decoration-none text-black"> 0906-571-6141</a></p>
+                            <p class="my-0 pb-4"><i class="bi bi-envelope-fill"></i><a href="mailto:meathub@support.com"
+                                    class="text-decoration-none text-black"> meathub@support.com</a></p>
                         </div>
                         <div class="col-lg-6">
                             <form>
@@ -674,7 +733,7 @@
                                 </div>
                                 <div class="mb-3 px-3">
                                     <select class="form-control" name="number-guests" id="number-guests" required>
-                                        <option selected disabled>Number Of Guests*</option>
+                                        <option selected disabled>Number Of Guests</option>
                                         <option value="1guest">1</option>
                                         <option value="2guests">2</option>
                                         <option value="3guests">3</option>
@@ -698,11 +757,6 @@
                                 <div class="mb-3 px-3">
                                     <input type="time" name="time" class="form-control" id="time" required>
                                 </div>
-                                <!-- <div class="row text-end">
-                                    <div class="col-12">
-                                        
-                                    </div>
-                                </div> -->
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -726,7 +780,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
     <!-- back to top js -->
     <script type="text/JavaScript" src="./js/btt.js"></script>
     <!-- nav js -->
