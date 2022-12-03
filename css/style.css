@@ -28,16 +28,19 @@ body::before {
   border-radius: 5px;
 }
 
+.aboutus-img {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+}
+
 .card-img-top {
   width: 100%;
   height: 15vw;
   object-fit: cover;
 }
 
-div#map {
-  /* width: 100%; */
-}
-
+/* above medium breakpoint */
 .chefbg {
   background-image: url(../images/chefbg.jpg);
   background-size: cover;
@@ -51,6 +54,7 @@ div#map {
   }
 }
 
+/* scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
 }
