@@ -6,21 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MeatHub</title>
-    <!-- font -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- bootstrap -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- icon -->
+    <!-- Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <!-- favicon -->
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./images/icon/favicon.ico">
-    <!-- our css -->
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Owl carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Owl carousel theme CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -50,15 +61,15 @@
                             MENU
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#meals">Meals</a></li>
+                            <li><a class="dropdown-item" href="#steak">Steak</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#drinks">Drinks</a></li>
+                            <li><a class="dropdown-item" href="#hamburger">Hamburger</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#steaks">Steaks</a></li>
+                            <li><a class="dropdown-item" href="#pizza">Pizza</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -75,809 +86,896 @@
         </div>
     </nav>
 
-    <!-- Banner -->
-    <div id="bannerC" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#bannerC" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#bannerC" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#bannerC" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#bannerC" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#bannerC" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./images/banner1.png" class="d-block w-100" alt="...">
-                <!-- <div class="carousel-caption d-none d-md-block">
+    <main>
+        <!-- Banner -->
+        <div id="bannerC" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bannerC" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#bannerC" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#bannerC" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#bannerC" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#bannerC" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/banner1.png" class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div> -->
-            </div>
-            <div class="carousel-item">
-                <img src="./images/banner2.png" class="d-block w-100" alt="...">
-                <!-- <div class="carousel-caption d-none d-md-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner2.png" class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
                 </div> -->
-            </div>
-            <div class="carousel-item">
-                <img src="./images/banner3.png" class="d-block w-100" alt="...">
-                <!-- <div class="carousel-caption d-none d-md-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner3.png" class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
                 </div> -->
-            </div>
-            <div class="carousel-item">
-                <img src="./images/banner4.png" class="d-block w-100" alt="...">
-                <!-- <div class="carousel-caption d-none d-md-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner4.png" class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
                     <h5>Fourth slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
                 </div> -->
-            </div>
-            <div class="carousel-item">
-                <img src="./images/banner5.png" class="d-block w-100" alt="...">
-                <!-- <div class="carousel-caption d-none d-md-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner5.png" class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
                     <h5>Fifth slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
                 </div> -->
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#bannerC" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#bannerC" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <!-- Reservation -->
-    <section class="bg-light text-center division">
-        <div class="container py-5" data-aos="fade-down" data-aos-duration="1500">
-            <!-- wont display flex until sm breakpoint -->
-            <div class="d-md-flex align-items-center align-self-center">
-                <div class="h1 pe-md-3">
-                    <div class="text-warning">MeatHub</div>
-                    <div class="my-4">"TASTE LIKE HEAVEN"</div>
-                    <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#reserve">Make A
-                        Reservation</button>
-                </div>
-                <!-- hides below small breakpoint. img-fluid class means the image stays inside the container -->
-                <img class="img-fluid w-75 d-none d-md-block rounded-2" src="images/reserve.jpg" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="aboutus" class="division">
-        <div class="container bg-light p-5 rounded-5">
-            <div data-aos="fade-up" data-aos-duration="1500">
-                <div class="text-center text-success h2">About Us</div>
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1500">
-                <p class="pt-5">
-                    If you're looking for delicious, healthy meat options that won't break the bank, then you'll want to
-                    check out our restaurant! We offer a variety of meat options, all of which are sourced from local
-                    farms. We also have a variety of side dishes that go great with our entrees, including salads and
-                    pasta dishes. Our menu also features several vegetarian and vegan options that will suit all tastes
-                    and preferences. Our goal is to offer a convenient and affordable meal option to our customers
-                    without compromising on taste or quality. Come to visit us at your earliest convenience and see for
-                    yourself!
-                </p>
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1500">
-                <p class="pt-5">
-                    Our menu features a number of protein-based entrees that are sure to satisfy all of our customers'
-                    needs. We have a number of steak options on our menu, including sirloin steak and ribeye steak. Our
-                    steaks will be sourced directly from trusted farms and high-quality ingredients will cut down on
-                    prices. Sides served at every meal will include salads, soups, and of course fries or vegetables.
-                    We also have burgers and other non-meat items for those looking for something a little different.
-                    All of our meals are cooked to perfection and served with a side of fries or a side of salad. We
-                    offer a wide selection of sides and desserts as well, so there's something for everyone at our shop!
-                </p>
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1500">
-                <div class="row row-cols-3">
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="./images/about1.jpg" alt="" class="aboutus-img">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="./images/about2.jpg" alt="" class="aboutus-img">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="./images/about3.jpg" alt="" class="aboutus-img">
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1500">
-                <p class="pt-5">
-                    Whether it’s happy hour after work or a late night out with friends, nothing says relaxation and
-                    celebration like time spent on an outdoor yard with a drink in your hand. Next time you feel closed
-                    in
-                    by the walls around you, step outside to enjoy one of the best outdoor resto-bars and grills in
-                    Philippines. MeatHub focuses on “Fresh, Quality Pinoy-Putok-batok Food” with an emphasis on small
-                    shareable
-                    plates that go well with beer.
-                </p>
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1500">
-                <p class="pt-5">
-                    We are located in Ayala Avenue 1209 Makati City Metro Manila and are open from 8 am to 10 pm every
-                    day. The atmosphere at our restaurants is casual and relaxed, so the whole family is welcome!
-                </p>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerC" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerC" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </section>
 
-    <!-- Menu -->
-    <section class="division">
-        <div class="container bg-light p-5 rounded-5">
-            <div class="text-center h2" data-aos="fade-up" data-aos-duration="1500">Menu</div>
-            <div id="meals" class="menu-spacing"></div>
-            <div>
+        <!-- Reservation -->
+        <section class="bg-light text-center division">
+            <div class="container py-5" data-aos="fade-down" data-aos-duration="1500">
+                <!-- wont display flex until sm breakpoint -->
+                <div class="d-md-flex align-items-center align-self-center">
+                    <div class="h1 pe-md-3">
+                        <div class="text-warning">MeatHub</div>
+                        <div class="my-4">"MEAT YOUR MAKER"</div>
+                        <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#reserve">Make A Reservation</button>
+                    </div>
+                    <!-- hides below small breakpoint. img-fluid class means the image stays inside the container -->
+                    <img class="img-fluid w-75 d-none d-md-block rounded-2" src="images/reserve.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="aboutus" class="division">
+            <div class="container bg-light p-5 rounded-5">
                 <div data-aos="fade-up" data-aos-duration="1500">
-                    <div class="h3 text-success">Meals</div>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- test -->
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=710&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="text-center text-success h2">About Us</div>
                 </div>
-            </div>
-            <div id="drinks" class="menu-spacing"></div>
-            <div>
                 <div data-aos="fade-up" data-aos-duration="1500">
-                    <div class="h3 text-success">Drinks</div>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- test -->
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="pt-5">
+                        If you're looking for delicious, healthy meat options that won't break the bank, then you'll
+                        want to
+                        check out our restaurant! We offer a variety of meat options, all of which are sourced from
+                        local
+                        farms. We also have a variety of side dishes that go great with our entrees, including salads
+                        and
+                        pasta dishes. Our menu also features several vegetarian and vegan options that will suit all
+                        tastes
+                        and preferences. Our goal is to offer a convenient and affordable meal option to our customers
+                        without compromising on taste or quality. Come to visit us at your earliest convenience and see
+                        for
+                        yourself!
+                    </p>
                 </div>
-            </div>
-            <div id="steaks" class="menu-spacing"></div>
-            <div>
                 <div data-aos="fade-up" data-aos-duration="1500">
-                    <div class="h3 text-success">Steaks</div>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
+                    <p class="pt-5">
+                        Our menu features a number of protein-based entrees that are sure to satisfy all of our
+                        customers'
+                        needs. We have a number of steak options on our menu, including sirloin steak and ribeye steak.
+                        Our
+                        steaks will be sourced directly from trusted farms and high-quality ingredients will cut down on
+                        prices. Sides served at every meal will include salads, soups, and of course fries or
+                        vegetables.
+                        We also have burgers and other non-meat items for those looking for something a little
+                        different.
+                        All of our meals are cooked to perfection and served with a side of fries or a side of salad. We
+                        offer a wide selection of sides and desserts as well, so there's something for everyone at our
+                        shop!
+                    </p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <div class="row row-cols-3">
+                        <div class="col-4">
                             <div class="card">
-                                <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
+                                <img src="./images/about1.jpg" alt="" class="aboutus-img">
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-4">
                             <div class="card">
-                                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
+                                <img src="./images/about2.jpg" alt="" class="aboutus-img">
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-4">
                             <div class="card">
-                                <img src="https://images.unsplash.com/photo-1532980400857-e8d9d275d858?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- test -->
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1586511934875-5c5411eebf79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1600335895229-6e75511892c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
-                                    class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of
-                                        the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
+                                <img src="./images/about3.jpg" alt="" class="aboutus-img">
                             </div>
                         </div>
                     </div>
                 </div>
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <p class="pt-5">
+                        Whether it's happy hour after work or a late night out with friends, nothing says relaxation and
+                        celebration like time spent on an outdoor yard with a drink in your hand. Next time you feel
+                        closed
+                        in
+                        by the walls around you, step outside to enjoy one of the best outdoor resto-bars and grills in
+                        Philippines. MeatHub focuses on “Fresh, Quality Pinoy-Putok-batok Food” with an emphasis on
+                        small
+                        shareable
+                        plates that go well with beer.
+                    </p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <p class="pt-5">
+                        We are located in Ayala Avenue 1209 Makati City Metro Manila and are open from 8 am to 10 pm
+                        every
+                        day. The atmosphere at our restaurants is casual and relaxed, so the whole family is welcome!
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Chefs -->
-    <section id="chefs" class="division">
-        <div class="chefbg py-5">
-            <div class="container" data-aos="fade-up" data-aos-duration="1500">
-                <h2 class="text-center text-white text-white py-5">Our Chefs</h2>
-                <p class="text-center text-white h4">
-                    We offer the best
-                </p>
-                <p class="text-center text-white h4 pb-5">
-                    ingredients for you
-                </p>
-                <div class="row g-4 pb-5 mb-5">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card bg-light">
-                            <div class="card-body text-center">
-                                <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3"
-                                    alt="">
-                                <h3 class="card-title mb-3">Raymart</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
-                                <div class="d-flex justify-content-evenly">
-                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+        <!-- Menu -->
+        <section class="division">
+            <div class="container bg-light p-5">
+                <div class="text-center text-success h2" data-aos="fade-up" data-aos-duration="1500">Our Menu</div>
+                <div id="steak" class="menu-spacing"></div>
+                <div>
+                    <div data-aos="fade-up" data-aos-duration="1500">
+                        <!-- Steak -->
+                        <div class="display-1 text-success mx-md-5">
+                            Steak
+                        </div>
+                        <p class="py-3 mx-md-5">
+                            A steak is a thick cut of meat generally sliced across the muscle fibers, sometimes
+                            including a
+                            bone. It is normally grilled or fried. Steak can be diced, cooked in sauce, such as in steak
+                            and
+                            kidney pie, or minced and formed into patties, such as hamburgers.
+                        </p>
+                        <div class="row row-cols-1 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="card border-success">
+                                    <img src="./images/steak/ribeye.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Ribeye Steak
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Ribeyes are loaded with marbling giving them a whole lot of flavor. This is
+                                            why many
+                                            consider these to be the tastiest of all steaks.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-success">
+                                    <img src="./images/steak/tenderloin.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Tenderloin Steak
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            The tenderloin steak is a cut from the loin of a cow. Also known as a filet
+                                            mignon
+                                            steak.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-success">
+                                    <img src="./images/steak/strip.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Strip Steak
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            You may have tried a strip steak without even knowing it. This strip comes
+                                            from the
+                                            short loin area of a cow.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center py-5">
+                            <a href="./subfolder/steak.html" class="btn btn-success">See All</a>
+                        </div>
+                        <p class="py-3 mx-md-5 d-none d-md-block">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laudantium et, aliquid
+                            deleniti
+                            ad similique laboriosam natus esse voluptatem hic enim odit ipsum nesciunt id repellat nulla
+                            numquam eligendi, assumenda labore, possimus quae maxime unde at. Adipisci maxime aut
+                            quaerat
+                            dolores repudiandae dicta saepe eos qui. Nemo, nulla in qui quos dolores modi doloremque cum
+                            ipsam magni laboriosam dolorem hic odit suscipit voluptatum unde at consequuntur quod
+                            facilis.
+                            Quam quos vel temporibus! Ratione dolor eveniet, deserunt maxime explicabo dolores
+                            dignissimos
+                            numquam facilis. Adipisci est commodi cupiditate id eos qui nesciunt quaerat debitis quos
+                            ullam.
+                            Tempora, soluta aliquid. Maxime deleniti inventore, earum tempora tempore voluptatum quasi
+                            cumque, perspiciatis dolor sequi ab amet, cupiditate modi vitae velit a numquam eveniet
+                            officiis
+                            dolores. Accusamus recusandae magni quam provident dolores doloremque voluptate nesciunt
+                            officiis quisquam nostrum ea dolore, deleniti aspernatur ullam facilis quidem alias
+                            suscipit!
+                            Nesciunt, doloribus ducimus. Animi sequi aspernatur cumque maiores fuga ad illum! Ad dolor,
+                            obcaecati placeat aperiam rerum numquam accusantium amet ut distinctio officiis atque quae
+                            tenetur quam quis repudiandae optio. Est blanditiis temporibus eligendi voluptate atque
+                            voluptas
+                            veniam porro, quae quidem rerum asperiores quod ab sequi ipsam aliquid. Alias placeat
+                            voluptatum
+                            qui in officia enim cum odio ad at molestiae nihil quia laborum quidem, quae sint
+                            perferendis
+                            est aperiam sunt pariatur eveniet ratione voluptatibus explicabo reprehenderit aut? Sunt,
+                            mollitia minima? Iste mollitia cumque provident ratione nihil deserunt atque suscipit,
+                            libero
+                            nemo enim fugiat sit sunt! Aspernatur molestias rerum aliquid mollitia nesciunt similique
+                            asperiores fugiat, omnis modi non nostrum sit consequuntur placeat. Saepe quia est magnam,
+                            quod
+                            suscipit nisi laboriosam dolore iusto sunt culpa, exercitationem facilis voluptates aliquam
+                            mollitia soluta temporibus natus officiis similique eius quibusdam officia minima. Minima
+                            qui
+                            explicabo expedita, illo eius, ea voluptatem atque dolor ex excepturi libero voluptatum ad
+                            praesentium laboriosam autem, harum cumque deserunt magnam!
+                        </p>
+                    </div>
+                </div>
+                <div id="hamburger" class="menu-spacing"></div>
+                <hr />
+                <div>
+                    <div data-aos="fade-up" data-aos-duration="1500">
+                        <!-- carousel hamburger -->
+                        <div class="display-1 text-success mx-md-5">
+                            Hamburger
+                        </div>
+                        <p class="py-3 mx-md-5">
+                            A hamburger, or simply burger, is a food consisting of fillings—usually a patty of ground
+                            meat,
+                            typically beef—placed inside a sliced bun or bread roll. Hamburgers are often served with
+                            cheese, lettuce, tomato, onion, pickles, bacon, or chilis; condiments such as ketchup,
+                            mustard,
+                            mayonnaise, relish, or a "special sauce", often a variation of Thousand Island dressing; and
+                            are
+                            frequently placed on sesame seed buns. A hamburger patty topped with cheese is called a
+                            cheeseburger.
+                        </p>
+                        <div class="row row-cols-sm-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card border-success">
+                                    <img src="./images/burger/beef.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Broiled Beef Burger
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Distinctive taste and irresistible flavour in every bite.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-success">
+                                    <img src="./images/burger/veggie.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Veggie Burger
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Veggie burgers are not easy to make awesome, but we think this one nails
+                                            it.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-success">
+                                    <img src="./images/burger/mushroom.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Mushroom Burger
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Ready to turn over a new burger? I guarantee no one will be missing the
+                                            beef
+                                            after tasting these vegetarian burgers.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center py-5">
+                            <a href="./subfolder/hamburger.html" class="btn btn-success">See All</a>
+                        </div>
+                        <p class="py-3 mx-md-5 d-none d-md-block">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laudantium et, aliquid
+                            deleniti
+                            ad similique laboriosam natus esse voluptatem hic enim odit ipsum nesciunt id repellat nulla
+                            numquam eligendi, assumenda labore, possimus quae maxime unde at. Adipisci maxime aut
+                            quaerat
+                            dolores repudiandae dicta saepe eos qui. Nemo, nulla in qui quos dolores modi doloremque cum
+                            ipsam magni laboriosam dolorem hic odit suscipit voluptatum unde at consequuntur quod
+                            facilis.
+                            Quam quos vel temporibus! Ratione dolor eveniet, deserunt maxime explicabo dolores
+                            dignissimos
+                            numquam facilis. Adipisci est commodi cupiditate id eos qui nesciunt quaerat debitis quos
+                            ullam.
+                            Tempora, soluta aliquid. Maxime deleniti inventore, earum tempora tempore voluptatum quasi
+                            cumque, perspiciatis dolor sequi ab amet, cupiditate modi vitae velit a numquam eveniet
+                            officiis
+                            dolores. Accusamus recusandae magni quam provident dolores doloremque voluptate nesciunt
+                            officiis quisquam nostrum ea dolore, deleniti aspernatur ullam facilis quidem alias
+                            suscipit!
+                            Nesciunt, doloribus ducimus. Animi sequi aspernatur cumque maiores fuga ad illum! Ad dolor,
+                            obcaecati placeat aperiam rerum numquam accusantium amet ut distinctio officiis atque quae
+                            tenetur quam quis repudiandae optio. Est blanditiis temporibus eligendi voluptate atque
+                            voluptas
+                            veniam porro, quae quidem rerum asperiores quod ab sequi ipsam aliquid. Alias placeat
+                            voluptatum
+                            qui in officia enim cum odio ad at molestiae nihil quia laborum quidem, quae sint
+                            perferendis
+                            est aperiam sunt pariatur eveniet ratione voluptatibus explicabo reprehenderit aut? Sunt,
+                            mollitia minima? Iste mollitia cumque provident ratione nihil deserunt atque suscipit,
+                            libero
+                            nemo enim fugiat sit sunt! Aspernatur molestias rerum aliquid mollitia nesciunt similique
+                            asperiores fugiat, omnis modi non nostrum sit consequuntur placeat. Saepe quia est magnam,
+                            quod
+                            suscipit nisi laboriosam dolore iusto sunt culpa, exercitationem facilis voluptates aliquam
+                            mollitia soluta temporibus natus officiis similique eius quibusdam officia minima. Minima
+                            qui
+                            explicabo expedita, illo eius, ea voluptatem atque dolor ex excepturi libero voluptatum ad
+                            praesentium laboriosam autem, harum cumque deserunt magnam!
+                        </p>
+                    </div>
+                </div>
+                <div id="pizza" class="menu-spacing"></div>
+                <hr />
+                <div>
+                    <div data-aos="fade-up" data-aos-duration="1500">
+                        <!-- carousel pizza -->
+                        <div class="display-1 text-success mx-md-5">
+                            Pizza
+                        </div>
+                        <p class="py-3 mx-md-5">
+                            There is absolutely no denying that pizza is one of the best foods ever invented. Italian
+                            food
+                            in general is top tier, but pizza holds the gauntlet as it is, perhaps, the best food ever
+                            created. The best thing about pizza is that it is totally customizable. From the base, to
+                            the
+                            sauce, to the cheese, to the toppings, you can choose different options to create a pizza
+                            that
+                            is totally unique to you. If you have ever sat and thought about pizza, like lots of us
+                            have,
+                            you might be wondering which toppings are the most popular.
+                        </p>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                            <div class="col">
+                                <div class="card border-success">
+                                    <img src="./images/pizza/pepperoni.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Pepperoni
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            For so many Filipinos, pepperoni is the ultimate pizza topping, and this is
+                                            primarily because it is a classic.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-success">
+                                    <img src="./images/pizza/sausage.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Sausage
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Some people prefer mild or sweet sausages, others prefer sausages with a
+                                            real meaty flavor, and some people like spicy sausage.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-success">
+                                    <img src="./images/pizza/mushroom.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Mushrooms
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Even if you don't like mushrooms in other meals, it is definitely worth
+                                            trying them as a topping on your pizza.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center py-5">
+                            <a href="./subfolder/pizza.html" class="btn btn-success">See All</a>
+                        </div>
+                        <p class="py-3 mx-md-5 d-none d-md-block">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laudantium et, aliquid
+                            deleniti
+                            ad similique laboriosam natus esse voluptatem hic enim odit ipsum nesciunt id repellat nulla
+                            numquam eligendi, assumenda labore, possimus quae maxime unde at. Adipisci maxime aut
+                            quaerat
+                            dolores repudiandae dicta saepe eos qui. Nemo, nulla in qui quos dolores modi doloremque cum
+                            ipsam magni laboriosam dolorem hic odit suscipit voluptatum unde at consequuntur quod
+                            facilis.
+                            Quam quos vel temporibus! Ratione dolor eveniet, deserunt maxime explicabo dolores
+                            dignissimos
+                            numquam facilis. Adipisci est commodi cupiditate id eos qui nesciunt quaerat debitis quos
+                            ullam.
+                            Tempora, soluta aliquid. Maxime deleniti inventore, earum tempora tempore voluptatum quasi
+                            cumque, perspiciatis dolor sequi ab amet, cupiditate modi vitae velit a numquam eveniet
+                            officiis
+                            dolores. Accusamus recusandae magni quam provident dolores doloremque voluptate nesciunt
+                            officiis quisquam nostrum ea dolore, deleniti aspernatur ullam facilis quidem alias
+                            suscipit!
+                            Nesciunt, doloribus ducimus. Animi sequi aspernatur cumque maiores fuga ad illum! Ad dolor,
+                            obcaecati placeat aperiam rerum numquam accusantium amet ut distinctio officiis atque quae
+                            tenetur quam quis repudiandae optio. Est blanditiis temporibus eligendi voluptate atque
+                            voluptas
+                            veniam porro, quae quidem rerum asperiores quod ab sequi ipsam aliquid. Alias placeat
+                            voluptatum
+                            qui in officia enim cum odio ad at molestiae nihil quia laborum quidem, quae sint
+                            perferendis
+                            est aperiam sunt pariatur eveniet ratione voluptatibus explicabo reprehenderit aut? Sunt,
+                            mollitia minima? Iste mollitia cumque provident ratione nihil deserunt atque suscipit,
+                            libero
+                            nemo enim fugiat sit sunt! Aspernatur molestias rerum aliquid mollitia nesciunt similique
+                            asperiores fugiat, omnis modi non nostrum sit consequuntur placeat. Saepe quia est magnam,
+                            quod
+                            suscipit nisi laboriosam dolore iusto sunt culpa, exercitationem facilis voluptates aliquam
+                            mollitia soluta temporibus natus officiis similique eius quibusdam officia minima. Minima
+                            qui
+                            explicabo expedita, illo eius, ea voluptatem atque dolor ex excepturi libero voluptatum ad
+                            praesentium laboriosam autem, harum cumque deserunt magnam!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chefs -->
+        <section id="chefs" class="division">
+            <div class="chefbg py-5">
+                <div class="container" data-aos="fade-up" data-aos-duration="1500">
+                    <h2 class="text-center text-white text-white py-5">Our Chefs</h2>
+                    <p class="text-center text-white h4">
+                        We offer the best
+                    </p>
+                    <p class="text-center text-white h4 pb-5">
+                        ingredients for you
+                    </p>
+                    <div class="row g-4 pb-5 mb-5">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="https://randomuser.me/api/portraits/men/11.jpg"
+                                        class="rounded-circle mb-3" alt="">
+                                    <h3 class="card-title mb-3">Raymart</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="https://randomuser.me/api/portraits/men/18.jpg"
+                                        class="rounded-circle mb-3" alt="">
+                                    <h3 class="card-title mb-3">Siegfred</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="https://randomuser.me/api/portraits/men/22.jpg"
+                                        class="rounded-circle mb-3" alt="">
+                                    <h3 class="card-title mb-3">Anthony</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="https://randomuser.me/api/portraits/men/28.jpg"
+                                        class="rounded-circle mb-3" alt="">
+                                    <h3 class="card-title mb-3">Christian</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
+                                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card bg-light">
-                            <div class="card-body text-center">
-                                <img src="https://randomuser.me/api/portraits/men/18.jpg" class="rounded-circle mb-3"
-                                    alt="">
-                                <h3 class="card-title mb-3">Siegfred</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
-                                <div class="d-flex justify-content-evenly">
-                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                                </div>
+        <!-- FAQS -->
+        <section id="faqs" class="division">
+            <div class="container py-5">
+                <div class="text-center py-5 h2" data-aos="fade-up" data-aos-duration="1500">Frequently Asked Questions
+                </div>
+                <div class="accordion accordion-flush" id="questions" data-aos="fade-up" data-aos-duration="1500">
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-1">
+                                Do you take reservations?
+                            </button>
+                        </h2>
+                        <div id="ques-1" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-2">
+                                Are you open on weekends?
+                            </button>
+                        </h2>
+                        <div id="ques-2" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-3">
+                                Do you have vegetarian, vegan, gluten free options?
+                            </button>
+                        </h2>
+                        <div id="ques-3" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-4">
+                                I see gluten free options on your menu but do you prepare them in separate containers?
+                                Do
+                                you have a separate gluten free fryer?
+                            </button>
+                        </h2>
+                        <div id="ques-4" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-5">
+                                Can you accommodate groups of 30 people? Do you have a private room? Will you stay open
+                                a
+                                bit later for a large group?
+                            </button>
+                        </h2>
+                        <div id="ques-5" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 6 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-6">
+                                Do you have a kids menu?
+                            </button>
+                        </h2>
+                        <div id="ques-6" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 7 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-7">
+                                I just got take out from here and there's a mistake in my order. Can you fix it?
+                            </button>
+                        </h2>
+                        <div id="ques-7" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 8 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-8">
+                                How late are you open today? How early do you open tomorrow?
+                            </button>
+                        </h2>
+                        <div id="ques-8" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 9 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-9">
+                                Where can I get nutritional info about your menu?
+                            </button>
+                        </h2>
+                        <div id="ques-9" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 10 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-10">
+                                Are you handicap accessible? To wheelchairs too?
+                            </button>
+                        </h2>
+                        <div id="ques-10" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 11 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-11">
+                                Is there parking nearby?
+                            </button>
+                        </h2>
+                        <div id="ques-11" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 12 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-12">
+                                Can we bring our own ____? (cake, wine) Is there a fee?
+                            </button>
+                        </h2>
+                        <div id="ques-12" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 13 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-13">
+                                Can I get a copy of all the ____ varietals with some info about them? (coffee, wine,
+                                cheese)
+                            </button>
+                        </h2>
+                        <div id="ques-13" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                    <!-- FAQ 14 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ques-14">
+                                I'm coming to celebrate my ____, what special thing can you do for me? (anniversary,
+                                birthday, promotion)
+                            </button>
+                        </h2>
+                        <div id="ques-14" class="accordion-collapse collapse" data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facilis,
+                                molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
+                                fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
+                                obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae
+                                sed
+                                at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Us -->
+        <hr />
+        <section id="contactus" class="division">
+            <div class="container py-5" data-aos="fade-up" data-aos-duration="1500">
+                <div class="h2">Get in touch</div>
+                <div class="h6 py-3">
+                    <p>
+                        Want to get in touch? We'd love to hear from you. Here's how you can reach us...
+                    </p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 g-4 text-center">
+                    <div class="col">
+                        <div class="p-3 border bg-light">
+                            <div class="h1">
+                                <i class="bi bi-telephone-fill"></i>
                             </div>
+                            <div class="h5 pb-3">Phone Numbers</div>
+                            <p>0906-571-6141</p>
+                            <p>0906-571-6142</p>
+                            <p>0906-571-6143</p>
+                            <p>0906-571-6144</p>
+                            <p>0906-571-6145</p>
                         </div>
                     </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card bg-light">
-                            <div class="card-body text-center">
-                                <img src="https://randomuser.me/api/portraits/men/22.jpg" class="rounded-circle mb-3"
-                                    alt="">
-                                <h3 class="card-title mb-3">Anthony</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
-                                <div class="d-flex justify-content-evenly">
-                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                                </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">
+                            <div class="h1">
+                                <i class="bi bi-envelope-fill"></i>
                             </div>
+                            <div class="h5 pb-3">Emails</div>
+                            <p>meathub@support.com</p>
+                            <p>rb.meathub@support.com</p>
+                            <p>ap.meathub@support.com</p>
+                            <p>co.meathub@support.com</p>
+                            <p>so.meathub@support.com</p>
                         </div>
                     </div>
+                </div>
+                <div class="h2 pt-5 pb-3">
+                    <p>
+                        Here you can make a reservation or just walkin to our restaurant
+                    </p>
+                </div>
+                <div id="map" class="row">
+                    <iframe class="col-lg-12 align-self-center"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.747244000973!2d121.02182529999999!3d14.5564414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90584047155%3A0xe40b7062b9faf9a2!2sAyala%20Ave%2C%20Makati%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1670041173426!5m2!1sen!2sph"
+                        width="600" height="450" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card bg-light">
-                            <div class="card-body text-center">
-                                <img src="https://randomuser.me/api/portraits/men/28.jpg" class="rounded-circle mb-3"
-                                    alt="">
-                                <h3 class="card-title mb-3">Christian</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
-                                <div class="d-flex justify-content-evenly">
-                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQS -->
-    <section id="faqs" class="division">
-        <div class="container py-5">
-            <div class="text-center py-5 h2" data-aos="fade-up" data-aos-duration="1500">Frequently Asked Questions
-            </div>
-            <div class="accordion accordion-flush" id="questions" data-aos="fade-up" data-aos-duration="1500">
-                <!-- FAQ 1 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-1">
-                            Do you take reservations?
-                        </button>
-                    </h2>
-                    <div id="ques-1" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 2 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-2">
-                            Are you open on weekends?
-                        </button>
-                    </h2>
-                    <div id="ques-2" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 3 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-3">
-                            Do you have vegetarian, vegan, gluten free options?
-                        </button>
-                    </h2>
-                    <div id="ques-3" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 4 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-4">
-                            I see gluten free options on your menu but do you prepare them in separate containers? Do
-                            you have a separate gluten free fryer?
-                        </button>
-                    </h2>
-                    <div id="ques-4" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 5 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-5">
-                            Can you accommodate groups of 30 people? Do you have a private room? Will you stay open a
-                            bit later for a large group?
-                        </button>
-                    </h2>
-                    <div id="ques-5" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 6 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-6">
-                            Do you have a kids menu?
-                        </button>
-                    </h2>
-                    <div id="ques-6" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 7 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-7">
-                            I just got take out from here and there's a mistake in my order. Can you fix it?
-                        </button>
-                    </h2>
-                    <div id="ques-7" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 8 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-8">
-                            How late are you open today? How early do you open tomorrow?
-                        </button>
-                    </h2>
-                    <div id="ques-8" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 9 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-9">
-                            Where can I get nutritional info about your menu?
-                        </button>
-                    </h2>
-                    <div id="ques-9" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 10 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-10">
-                            Are you handicap accessible? To wheelchairs too?
-                        </button>
-                    </h2>
-                    <div id="ques-10" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 11 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-11">
-                            Is there parking nearby?
-                        </button>
-                    </h2>
-                    <div id="ques-11" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 12 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-12">
-                            Can we bring our own ____? (cake, wine) Is there a fee?
-                        </button>
-                    </h2>
-                    <div id="ques-12" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 13 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-13">
-                            Can I get a copy of all the ____ varietals with some info about them? (coffee, wine, cheese)
-                        </button>
-                    </h2>
-                    <div id="ques-13" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-                <!-- FAQ 14 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#ques-14">
-                            I’m coming to celebrate my ____, what special thing can you do for me? (anniversary,
-                            birthday, promotion)
-                        </button>
-                    </h2>
-                    <div id="ques-14" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-                            molestias? Nulla, recusandae. Culpa voluptatem dolorum architecto delectus minima porro
-                            fugiat quidem voluptatum dolore consequuntur ullam unde quisquam repellat, sit animi
-                            obcaecati alias repellendus corrupti officiis. Quisquam soluta quod ab ipsa! Recusandae sed
-                            at delectus numquam deleniti rerum placeat, voluptas quasi?</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Us -->
-    <hr />
-    <section id="contactus" class="division">
-        <div class="container py-5" data-aos="fade-down" data-aos-duration="1500">
-            <div class="h2">Get in touch</div>
-            <div class="h6 py-3">
-                <p>
-                    Want to get in touch? We'd love to hear from you. Here's how you can reach us...
-                </p>
-            </div>
-            <div class="row row-cols-1 row-cols-md-2 g-4 text-center">
-                <div class="col">
-                    <div class="p-3 border bg-light">
-                        <div class="h1">
-                            <i class="bi bi-telephone-fill"></i>
-                        </div>
-                        <div class="h5 pb-3">Phone Numbers</div>
-                        <p>0906-571-6141</p>
-                        <p>0906-571-6142</p>
-                        <p>0906-571-6143</p>
-                        <p>0906-571-6144</p>
-                        <p>0906-571-6145</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3 border bg-light">
-                        <div class="h1">
-                            <i class="bi bi-envelope-fill"></i>
-                        </div>
-                        <div class="h5 pb-3">Emails</div>
-                        <p>meathub@support.com</p>
-                        <p>rb.meathub@support.com</p>
-                        <p>ap.meathub@support.com</p>
-                        <p>co.meathub@support.com</p>
-                        <p>so.meathub@support.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="h2 pt-5 pb-3">
-                <p>
-                    Here you can make a reservation or just walkin to our restaurant
-                </p>
-            </div>
-            <div id="map" class="row">
-                <iframe class="col-lg-12 align-self-center"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.747244000973!2d121.02182529999999!3d14.5564414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90584047155%3A0xe40b7062b9faf9a2!2sAyala%20Ave%2C%20Makati%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1670041173426!5m2!1sen!2sph"
-                    width="600" height="450" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="p-5 bg-dark text-white text-center position-relative">
@@ -943,10 +1041,14 @@
                                     </select>
                                 </div>
                                 <div class="mb-3 px-3">
-                                    <input type="date" name="date" class="form-control" id="date" required>
+                                    <!-- <label for="date" class="form-label">Date</label> -->
+                                    <input type="date" name="date" class="form-control" id="date"
+                                        placeholder="mm/dd/yyyy" required>
                                 </div>
                                 <div class="mb-3 px-3">
-                                    <input type="time" name="time" class="form-control" id="time" required>
+                                    <!-- <label for="time" class="form-label">Time</label> -->
+                                    <input type="time" name="time" class="form-control" id="time" placeholder="Time"
+                                        required>
                                 </div>
                             </form>
                         </div>
@@ -960,18 +1062,27 @@
         </div>
     </div>
 
-
-    </div>
-
-    <!-- BS js -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-    <!-- AOS js -->
+    <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
+    <!-- AOS Init -->
+    <script type="text/JavaScript" src="./js/aos.js"></script>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- external carousel js -->
+    <script src="./js/carousel.js"></script>
+
     <!-- back to top js -->
     <script type="text/JavaScript" src="./js/btt.js"></script>
     <!-- nav js -->
