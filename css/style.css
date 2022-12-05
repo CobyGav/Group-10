@@ -1,0 +1,105 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body::before {
+  display: block;
+  content: '';
+  height: 55px;
+}
+
+.division {
+  padding-top: 40px;
+}
+
+.menu-spacing {
+  padding-top: 70px;
+}
+
+#backtoTop {
+  background: none;
+  display: flex;
+  position: fixed;
+  bottom: 16px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+#backtoTop.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.aboutus-img {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.card-body-custom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1d8857;
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  transition: .5s ease-in-out;
+}
+.card:hover .card-body-custom {
+  height: 50%;
+}
+
+/* owl carousel */
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  color: #1d8857 !important;
+  background: none !important;
+  font-size: 50px !important;
+  width: 40px;
+  height: 40px;
+}
+
+/* above medium breakpoint */
+.chefbg {
+  background-image: url(../images/chefbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .chefbg {
+    background-image: none;
+    background-color: #1d8857;
+  }
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(200, 200, 200, 1);
+  box-shadow: inset 0 0 6px rgba(200, 200, 200, 1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #1d8857;
+  -webkit-box-shadow: inset 0 0 6px rgba(90, 90, 90, 0.7);
+  box-shadow: inset 0 0 6px rgba(90, 90, 90, 0.7);
+}
