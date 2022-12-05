@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icon/favicon.ico">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Owl carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Owl carousel theme CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-success navbar-dark fixed-top">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand">
+                <span class="text-warning h1">MeatHub</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link fw-semibold ps-lg-3">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-semibold dropdown-toggle ps-lg-3 active" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            MENU
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./steak.html">Steak</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item disabled" href="./hamburger.html">Hamburger</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./pizza.html">Pizza</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contactus.html" class="nav-link fw-semibold ps-lg-3">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <div class="container-fluid bg-light p-5">
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <!-- carousel hamburger -->
+                    <div class="display-1 text-success mx-md-5">
+                        Hamburger
+                    </div>
+                    <p class="py-3 mx-md-5">
+                        A hamburger, or simply burger, is a food consisting of fillings—usually a patty of ground
+                        meat,
+                        typically beef—placed inside a sliced bun or bread roll. Hamburgers are often served with
+                        cheese, lettuce, tomato, onion, pickles, bacon, or chilis; condiments such as ketchup,
+                        mustard,
+                        mayonnaise, relish, or a "special sauce", often a variation of Thousand Island dressing; and
+                        are
+                        frequently placed on sesame seed buns. A hamburger patty topped with cheese is called a
+                        cheeseburger.
+                    </p>
+                    <div class="row">
+                        <div class="owl-carousel owl-theme owl-loaded g-3">
+                            <!-- Item 1 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/burger/beef.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Broiled Beef Burger
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Distinctive taste and irresistible flavour in every bite.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/burger/veggie.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Veggie Burger
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Veggie burgers are not easy to make awesome, but we think this one nails
+                                            it.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/burger/mushroom.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Mushroom Burger
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Ready to turn over a new burger? I guarantee no one will be missing the
+                                            beef
+                                            after tasting these vegetarian burgers.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/burger/turkey.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Turkey Burger
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Turkey is lower in cholesterol than beef, higher in protein than
+                                            chicken,
+                                            and contains much less fat than pork.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/burger/chicken.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Chicken Burger
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            It's a crunchy deep-fried chicken thigh dipped in zingy Asian-style
+                                            lemongrass and sambal sauce.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/burger/blackbean.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Black Bean Burger
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Whether you're vegetarian or not, this black bean burger recipe will hit
+                                            every spot.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 7 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/burger/salmon.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Salmon Burger
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Our newest favorite way to eat salmon is patted into a patty, seasoned
+                                            and
+                                            pan-fried until lightly crispy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 8 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/burger/chili.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Chili Burger
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            A juicy burgers topped with melty cheese, warm chili and crispy onion strings all loaded on a hamburger bun.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 9 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/burger/bison.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Bison Burger
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            A healthy delicious alternative to beef because they are lower in fat and calories, and full of minerals and micronutrients.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-3 mx-md-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laudantium et, aliquid
+                        deleniti
+                        ad similique laboriosam natus esse voluptatem hic enim odit ipsum nesciunt id repellat nulla
+                        numquam eligendi, assumenda labore, possimus quae maxime unde at. Adipisci maxime aut
+                        quaerat
+                        dolores repudiandae dicta saepe eos qui. Nemo, nulla in qui quos dolores modi doloremque cum
+                        ipsam magni laboriosam dolorem hic odit suscipit voluptatum unde at consequuntur quod
+                        facilis.
+                        Quam quos vel temporibus! Ratione dolor eveniet, deserunt maxime explicabo dolores
+                        dignissimos
+                        numquam facilis. Adipisci est commodi cupiditate id eos qui nesciunt quaerat debitis quos
+                        ullam.
+                        Tempora, soluta aliquid. Maxime deleniti inventore, earum tempora tempore voluptatum quasi
+                        cumque, perspiciatis dolor sequi ab amet, cupiditate modi vitae velit a numquam eveniet
+                        officiis
+                        dolores. Accusamus recusandae magni quam provident dolores doloremque voluptate nesciunt
+                        officiis quisquam nostrum ea dolore, deleniti aspernatur ullam facilis quidem alias
+                        suscipit!
+                        Nesciunt, doloribus ducimus. Animi sequi aspernatur cumque maiores fuga ad illum! Ad dolor,
+                        obcaecati placeat aperiam rerum numquam accusantium amet ut distinctio officiis atque quae
+                        tenetur quam quis repudiandae optio. Est blanditiis temporibus eligendi voluptate atque
+                        voluptas
+                        veniam porro, quae quidem rerum asperiores quod ab sequi ipsam aliquid. Alias placeat
+                        voluptatum
+                        qui in officia enim cum odio ad at molestiae nihil quia laborum quidem, quae sint
+                        perferendis
+                        est aperiam sunt pariatur eveniet ratione voluptatibus explicabo reprehenderit aut? Sunt,
+                        mollitia minima? Iste mollitia cumque provident ratione nihil deserunt atque suscipit,
+                        libero
+                        nemo enim fugiat sit sunt! Aspernatur molestias rerum aliquid mollitia nesciunt similique
+                        asperiores fugiat, omnis modi non nostrum sit consequuntur placeat. Saepe quia est magnam,
+                        quod
+                        suscipit nisi laboriosam dolore iusto sunt culpa, exercitationem facilis voluptates aliquam
+                        mollitia soluta temporibus natus officiis similique eius quibusdam officia minima. Minima
+                        qui
+                        explicabo expedita, illo eius, ea voluptatem atque dolor ex excepturi libero voluptatum ad
+                        praesentium laboriosam autem, harum cumque deserunt magnam!
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Group10-WD30 KodeGo</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS Init -->
+    <script type="text/JavaScript" src="../js/aos.js"></script>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- external carousel js -->
+    <script src="../js/carousel.js"></script>
+
+    <!-- back to top js -->
+    <script type="text/JavaScript" src="../js/btt.js"></script>
+    <!-- nav js -->
+    <script type="text/JavaScript" src="../js/nav.js"></script>
+
+</body>
+
+</html>

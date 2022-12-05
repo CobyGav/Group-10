@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icon/favicon.ico">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Owl carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Owl carousel theme CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-success navbar-dark fixed-top">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand">
+                <span class="text-warning h1">MeatHub</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link fw-semibold ps-lg-3">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-semibold dropdown-toggle ps-lg-3 active" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            MENU
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./steak.html">Steak</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./hamburger.html">Hamburger</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item disabled" href="./pizza.html">Pizza</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contactus.html" class="nav-link fw-semibold ps-lg-3">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <div class="container-fluid bg-light p-5">
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <!-- carousel pizza -->
+                    <div class="display-1 text-success mx-md-5">
+                        Pizza
+                    </div>
+                    <p class="py-3 mx-md-5">
+                        There is absolutely no denying that pizza is one of the best foods ever invented. Italian food in general is top tier, but pizza holds the gauntlet as it is, perhaps, the best food ever created. The best thing about pizza is that it is totally customizable. From the base, to the sauce, to the cheese, to the toppings, you can choose different options to create a pizza that is totally unique to you. If you have ever sat and thought about pizza, like lots of us
+                        have, you might be wondering which toppings are the most popular.
+                    </p>
+                    <div class="row">
+                        <div class="owl-carousel owl-theme owl-loaded g-3">
+                            <!-- Item 1 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/pepperoni.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Pepperoni
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            For so many Filipinos, pepperoni is the ultimate pizza topping, and this is primarily because it is a classic.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/sausage.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Sausage
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Some people prefer mild or sweet sausages, others prefer sausages with a real meaty flavor, and some people like spicy sausage.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/mushroom.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Mushrooms
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Even if you don't like mushrooms in other meals, it is definitely worth trying them as a topping on your pizza.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/bacon.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Bacon
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Even though bacon is usually associated with breakfast dishes, there is no dish which it can't make better.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/onion.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Onions
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Onions are a versatile topping for most food and pizza is no exception.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/cheese.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Cheese Overload
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            For some, this might not count as a topping, but for us, there isn't
+                                            much better than extra cheese on a pizza.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 7 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/peppers.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Peppers
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Peppers are extremely versatile vegetables, and any color will taste excellent when cooked on a pizza base.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 8 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/chicken.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Chicken
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Chicken isn't a traditional items for topping your pizza, but it is
+                                            still one that a lot of people opt for.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 9 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/blackolives.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Black Olives
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            This is another potentially controversial topping, but black olives can give your pizza a salty kick.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 10 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/spinach.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Spinach
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            If you are a lover of vegetables, then you probably really enjoy a
+                                            spinach topping on your pizza.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 11 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/tomatobasil.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Tomato and Basil
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            If you are going for a classic style margarita pizza, then the perfect topping is tomato and basil.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 12 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/beef.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Beef
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            If you are a fan of a meat lovers pizza, then beef is probably a topping that you are very familiar with.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 13 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/ham.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Ham
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            If you aren't a diehard fan of the controversial ham and pineapple pizza, you might prefer just ham as your topping of choice.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 14 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/pesto.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Pesto
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            Tomato-based sauces on pizza is a hill that some people are willing to die on, a pizza that uses pesto as its base sauce is far too much.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 15 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/pork.jpg" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Pulled Pork
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            If you are a fan of takeaway pizza, then you have probably tried pulled pork as a topping.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 16 -->
+                            <div class="item">
+                                <div class="card border-success">
+                                    <img src="../images/pizza/hamandpineapple.webp" class="card-img-top" alt="">
+                                    <div class="card-body-custom card-body bg-success">
+                                        <h4 class="card-title text-white">
+                                            Ham And Pineapple
+                                        </h4>
+                                        <p class="card-text text-white">
+                                            When we spoke of controversial pizza toppings, you already knew that this was the one that we were speaking about.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="py-3 mx-md-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laudantium et, aliquid
+                        deleniti
+                        ad similique laboriosam natus esse voluptatem hic enim odit ipsum nesciunt id repellat nulla
+                        numquam eligendi, assumenda labore, possimus quae maxime unde at. Adipisci maxime aut
+                        quaerat
+                        dolores repudiandae dicta saepe eos qui. Nemo, nulla in qui quos dolores modi doloremque cum
+                        ipsam magni laboriosam dolorem hic odit suscipit voluptatum unde at consequuntur quod
+                        facilis.
+                        Quam quos vel temporibus! Ratione dolor eveniet, deserunt maxime explicabo dolores
+                        dignissimos
+                        numquam facilis. Adipisci est commodi cupiditate id eos qui nesciunt quaerat debitis quos
+                        ullam.
+                        Tempora, soluta aliquid. Maxime deleniti inventore, earum tempora tempore voluptatum quasi
+                        cumque, perspiciatis dolor sequi ab amet, cupiditate modi vitae velit a numquam eveniet
+                        officiis
+                        dolores. Accusamus recusandae magni quam provident dolores doloremque voluptate nesciunt
+                        officiis quisquam nostrum ea dolore, deleniti aspernatur ullam facilis quidem alias
+                        suscipit!
+                        Nesciunt, doloribus ducimus. Animi sequi aspernatur cumque maiores fuga ad illum! Ad dolor,
+                        obcaecati placeat aperiam rerum numquam accusantium amet ut distinctio officiis atque quae
+                        tenetur quam quis repudiandae optio. Est blanditiis temporibus eligendi voluptate atque
+                        voluptas
+                        veniam porro, quae quidem rerum asperiores quod ab sequi ipsam aliquid. Alias placeat
+                        voluptatum
+                        qui in officia enim cum odio ad at molestiae nihil quia laborum quidem, quae sint
+                        perferendis
+                        est aperiam sunt pariatur eveniet ratione voluptatibus explicabo reprehenderit aut? Sunt,
+                        mollitia minima? Iste mollitia cumque provident ratione nihil deserunt atque suscipit,
+                        libero
+                        nemo enim fugiat sit sunt! Aspernatur molestias rerum aliquid mollitia nesciunt similique
+                        asperiores fugiat, omnis modi non nostrum sit consequuntur placeat. Saepe quia est magnam,
+                        quod
+                        suscipit nisi laboriosam dolore iusto sunt culpa, exercitationem facilis voluptates aliquam
+                        mollitia soluta temporibus natus officiis similique eius quibusdam officia minima. Minima
+                        qui
+                        explicabo expedita, illo eius, ea voluptatem atque dolor ex excepturi libero voluptatum ad
+                        praesentium laboriosam autem, harum cumque deserunt magnam!
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Group10-WD30 KodeGo</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS Init -->
+    <script type="text/JavaScript" src="../js/aos.js"></script>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- external carousel js -->
+    <script src="../js/carousel.js"></script>
+
+    <!-- back to top js -->
+    <script type="text/JavaScript" src="../js/btt.js"></script>
+    <!-- nav js -->
+    <script type="text/JavaScript" src="../js/nav.js"></script>
+
+</body>
+
+</html>
