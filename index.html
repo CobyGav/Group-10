@@ -20,7 +20,6 @@
     <link rel="icon" type="image/x-icon" href="./images/icon/favicon.ico">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <!-- Owl carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -30,7 +29,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!--  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_green.css">
     <!-- External CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -237,7 +238,7 @@
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1500">
                     <p class="pt-5">
-                        We are located in Ayala Avenue 1209 Makati City Metro Manila and are open from 8 am to 10 pm
+                        We are located in Ayala Avenue 1209 Makati City Metro Manila and are open from 8 am to 11 pm
                         every
                         day. The atmosphere at our restaurants is casual and relaxed, so the whole family is welcome!
                     </p>
@@ -920,7 +921,7 @@
     </a>
 
     <!-- Modal -->
-    <div class="modal fade" id="reserve" tabindex="-1" aria-labelledby="reserveLabel" aria-hidden="true">
+    <div class="modal fade" id="reserve" tabindex="-1" data-bs-backdrop="static" aria-labelledby="reserveLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content bg-light">
                 <div class="modal-header bg-success">
@@ -939,20 +940,20 @@
                             <form id="reservation">
                                 <div class="h6 text-center">Please fill out this form</div>
                                 <div class="mb-3 px-3">
-                                    <input type="text" name="fullName" class="form-control" placeholder="Full Name*"
-                                        id="fullName" required>
+                                    <input type="text" name="fullName" class="form-control" placeholder="Full Name" id="fullName">
+                                    <small id="nameError"></small>
                                 </div>
                                 <div class="mb-3 px-3">
-                                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number*"
-                                        id="phone" required>
+                                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number" id="phone">
+                                    <small id="phoneError"></small>
                                 </div>
                                 <div class="mb-3 px-3">
-                                    <input type="email" name="email" class="form-control" placeholder="Email*"
-                                        id="email" required>
+                                    <input type="text" name="email" class="form-control" placeholder="Email" id="email">
+                                    <small id="emailError"></small>
                                 </div>
                                 <div class="mb-3 px-3">
-                                    <select class="form-control" name="number-guests" id="number-guests" required>
-                                        <option selected disabled>Number Of Guests</option>
+                                    <select class="form-control" name="numberOfGuests" id="numberOfGuests">
+                                        <option value="0" selected disabled>Number Of Guests</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -969,21 +970,14 @@
                                         <option value="14">14</option>
                                         <option value="15">15</option>
                                     </select>
+                                    <small id="guestError"></small>
                                 </div>
                                 <div class="mb-3 px-3">
-                                    <!-- <label for="date" class="form-label">Date</label> -->
-                                    <input type="date" name="date" class="form-control" id="date"
-                                        placeholder="mm/dd/yyyy" required>
-                                </div>
-                                <div class="mb-3 px-3">
-                                    <!-- <label for="time" class="form-label">Time</label> -->
-                                    <input type="time" name="time" class="form-control" id="time" placeholder="Time"
-                                        required>
+                                    <input type="text" name="dateAndTime" class="form-control" id="dateAndTime" placeholder="Select Date and Time">
+                                    <small id="dateError"></small>
                                 </div>
                                 <div class="modal-footer">
-                                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
                                     <input type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Close">
-                                    <!-- <button type="button" class="btn btn-success">Submit</button> -->
                                     <input type="submit" class="btn btn-success" value="Submit">
                                 </div>
                             </form>
@@ -1020,8 +1014,14 @@
     <script type="text/JavaScript" src="./js/btt.js"></script>
     <!-- nav js -->
     <script type="text/JavaScript" src="./js/nav.js"></script>
+    <!-- Emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- Modal js -->
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Date and Time js -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./js/datetime.js"></script>
 
 </body>
 
