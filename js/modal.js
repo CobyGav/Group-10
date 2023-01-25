@@ -34,11 +34,17 @@ const validateFullName = () => {
 
 const validatePhoneNumber = () => {
     const phoneValue = phoneNumber.value.trim();
+    const phoneValidator = /^[0-9]*$/;
 
     phoneError.innerText = '';
     if(!phoneValue) {
         phoneError.style.display = 'block';
         phoneError.innerText = 'Phone Number is required';
+        return false;
+    }
+    else if(!phoneValidator.test(phoneValue)) {
+        phoneError.style.display = 'block';
+        phoneError.innerText = 'Please enter a valid phone number';
         return false;
     }
     else if(phoneValue.length !== 11) {
