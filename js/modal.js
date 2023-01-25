@@ -34,11 +34,17 @@ const validateFullName = () => {
 
 const validatePhoneNumber = () => {
     const phoneValue = phoneNumber.value.trim();
+    const phoneValidator = /^[0-9]*$/;
 
     phoneError.innerText = '';
     if(!phoneValue) {
         phoneError.style.display = 'block';
         phoneError.innerText = 'Phone Number is required';
+        return false;
+    }
+    else if(!phoneValidator.test(phoneValue)) {
+        phoneError.style.display = 'block';
+        phoneError.innerText = 'Please enter a valid phone number';
         return false;
     }
     else if(phoneValue.length !== 11) {
@@ -122,7 +128,12 @@ reservation.addEventListener(
             dateAndTime: dateAndTime.value
         };
         
-        if(validateFullName() === true && validatePhoneNumber() === true && validateEmail() === true && validateNumberOfGuests() === true && validateDateAndTime() === true && confirm('Are you sure you want to submit?') === true) {
+        if( validateFullName() === true 
+        && validatePhoneNumber() === true 
+        && validateEmail() === true 
+        && validateNumberOfGuests() === true 
+        && validateDateAndTime() === true 
+        && confirm('Are you sure you want to submit?') === true ) {
             // emailjs.send(serviceId, templateId, sendMail, publicKey);
             console.log(sendMail);
             reservation.reset();
