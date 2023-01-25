@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icon/favicon.ico">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Owl carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Owl carousel theme CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md bg-success navbar-dark fixed-top">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand">
+                    <span class="text-warning h1">MeatHub</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link fw-semibold ps-lg-3">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fw-semibold dropdown-toggle ps-lg-3" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                MENU
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-light" href="./steak.html">Steak</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-light" href="./hamburger.html">Hamburger</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-light" href="./pizza.html">Pizza</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contactus.html" class="nav-link fw-semibold ps-lg-3 active">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<br><br>
+                        <div class = "container1">
+                            <div class="meal-wrapper">
+                                <div class="meal-search">
+                                    <h2 class="title">Make your own MeatHub Exclusive Recipes!</h2>
+                                    <br>
+                                    <p>We are fully aware that in the midst of this Pandemic, you are still very hesitant to leave the comfort of your home and mingle with friends, relatives, what more strangers!
+                                        No worries! We got you!
+                                    </p>
+
+                                    <p>Here you can search for our very own recipe, check the ingredients and order from us the best quality Beef, Pork, Bread and all other ingredients straight from our kitchen and have it delivered to your house!</p>
+                                    
+                                    <div class="meal-search-box">
+                                        <input type="text1" class="search-control" placeholder="Enter Keyword" id="search-input">
+                                        <button type="submit" class="search-btn btn1" id="search-btn">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="meal-result">
+                                    <h2 class="title1">Your Search Results:</h2>
+                                    <div id="meal">
+                                        <!-- meal item -->
+                                        <!-- <div class="meal-item">
+                                            <div class="meal-img">
+                                                <img src="/images/burger/beef.jpg" alt="food">
+                                            </div>
+                                            <div class="meal-name">
+                                                <h3>Potato Chips</h3>
+                                                <a href="#" class="recipe-btn">Get Recipe</a>
+                                            </div>
+                                        </div> -->
+                                        <!-- end of meal item -->
+                                    </div>
+                                </div>
+                                
+                                <div class="meal-details">
+                                    <!-- recipe close btn -->
+                                    <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+
+                                    <!-- meal content -->
+                                    <div class="meal-details-content">
+                                        <!-- <h2 class="recipe-title">Meals Name Here</h2>
+                                        <p class="recipe-category">Category Name</p>
+                                        <div class="recipe-instruct">
+                                            <h3>Instructions:</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam error culpa nobis delectus inventore ad laudantium ipsum, omnis hic pariatur.</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam illum accusantium eligendi reprehenderit veritatis natus doloribus impedit quae enim!</p>
+
+                                        </div>
+                                        <div class="recipe-meal-img">
+                                            <img src="/images/burger/beef.jpg" alt="">
+                                        </div>
+                                        <div class="recipe-link">
+                                            <a href="#" target="_blank">Watch Video</a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+<br><br>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Group10-WD30 KodeGo</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="reserve" tabindex="-1" aria-labelledby="reserveLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-light">
+                <div class="modal-header bg-success">
+                    <div class="modal-title text-white h4" id="reserveLabel">TABLE RESERVATION</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6 align-self-center text-center py-3">
+                            <div class="h4 pb-3">Contact Us</div>
+                            <p class="my-0"><i class="bi bi-telephone-fill"></i><a href="tel:09065716141"
+                                    class="text-decoration-none text-black"> 0906-571-6141</a></p>
+                            <p class="my-0 pb-4"><i class="bi bi-envelope-fill"></i><a href="mailto:meathub@support.com"
+                                    class="text-decoration-none text-black"> meathub@support.com</a></p>
+                        </div>
+                        <div class="col-lg-6">
+                            <form>
+                                <div class="h6 text-center">Please fill out this form</div>
+                                <div class="mb-3 px-3">
+                                    <input type="text" name="fullName" class="form-control" placeholder="Full Name*"
+                                        id="fullName" required>
+                                </div>
+                                <div class="mb-3 px-3">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number*"
+                                        id="phone" required>
+                                </div>
+                                <div class="mb-3 px-3">
+                                    <input type="email" name="email" class="form-control" placeholder="Email*"
+                                        id="email" required>
+                                </div>
+                                <div class="mb-3 px-3">
+                                    <select class="form-control" name="number-guests" id="number-guests" required>
+                                        <option selected disabled>Number Of Guests</option>
+                                        <option value="1guest">1</option>
+                                        <option value="2guests">2</option>
+                                        <option value="3guests">3</option>
+                                        <option value="4guests">4</option>
+                                        <option value="5guests">5</option>
+                                        <option value="6guests">6</option>
+                                        <option value="7guests">7</option>
+                                        <option value="8guests">8</option>
+                                        <option value="9guests">9</option>
+                                        <option value="10guests">10</option>
+                                        <option value="11guests">11</option>
+                                        <option value="12guests">12</option>
+                                        <option value="13guests">13</option>
+                                        <option value="14guests">14</option>
+                                        <option value="15guests">15</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3 px-3">
+                                    <!-- <label for="date" class="form-label">Date</label> -->
+                                    <input type="date" name="date" class="form-control" id="date"
+                                        placeholder="mm/dd/yyyy" required>
+                                </div>
+                                <div class="mb-3 px-3">
+                                    <!-- <label for="time" class="form-label">Time</label> -->
+                                    <input type="time" name="time" class="form-control" id="time" placeholder="Time"
+                                        required>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/recipesearch.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS Init -->
+    <script type="text/JavaScript" src="../js/aos.js"></script>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- external carousel js -->
+    <script src="../js/carousel.js"></script>
+
+    <!-- back to top js -->
+    <script type="text/JavaScript" src="../js/btt.js"></script>
+    <!-- nav js -->
+    <script type="text/JavaScript" src="../js/nav.js"></script>
+
+</body>
+
+</html>
