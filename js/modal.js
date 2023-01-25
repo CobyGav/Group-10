@@ -122,7 +122,12 @@ reservation.addEventListener(
             dateAndTime: dateAndTime.value
         };
         
-        if(validateFullName() === true && validatePhoneNumber() === true && validateEmail() === true && validateNumberOfGuests() === true && validateDateAndTime() === true && confirm('Are you sure you want to submit?') === true) {
+        if( validateFullName() === true 
+        && validatePhoneNumber() === true 
+        && validateEmail() === true 
+        && validateNumberOfGuests() === true 
+        && validateDateAndTime() === true 
+        && confirm('Are you sure you want to submit?') === true ) {
             // emailjs.send(serviceId, templateId, sendMail, publicKey);
             console.log(sendMail);
             reservation.reset();
